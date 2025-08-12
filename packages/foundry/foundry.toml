@@ -5,6 +5,9 @@ libs = ['node_modules', 'lib']
 test = 'test'
 ffi = true
 solc_version = '0.8.24'
+optimizer = true
+optimizer_runs = 200
+via_ir = true
 auto_detect_solc = false
 evm_version = 'cancun'
 ignored_error_codes = [2394] # Transient storage
@@ -19,6 +22,6 @@ mainnet = "${MAINNET_RPC_URL}"
 gnosis = "${GNOSIS_RPC_URL}"
 
 
-# [etherscan]
+[etherscan]
 # polygonMumbai = { key = "${ETHERSCAN_API_KEY}" }
-# sepolia = { key = "${ETHERSCAN_API_KEY}" }
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
